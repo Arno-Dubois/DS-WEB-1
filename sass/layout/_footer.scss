@@ -1,0 +1,20 @@
+footer {
+    height: 229px;
+    background-color: $primary-black;
+    div {
+        border: 1px white solid;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0 auto;
+        }
+
+        ul {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(auto-fit, minmax(146px, 1fr));
+            list-style: none;
+        }
+    }
+}
