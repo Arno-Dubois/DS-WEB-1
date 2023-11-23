@@ -1,0 +1,32 @@
+header {
+    width: 100%;
+}
+
+.header--logo {
+    background-color: $secondary-black;
+
+    img {
+        padding: 10px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+    }
+}
+
+.header--menu ul {
+    display: grid;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-family: Bigelow Rules;
+    font-size: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(346px, 1fr));
+    text-align: center;
+    background-color: $primary-black;
+
+    li {
+        list-style: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
