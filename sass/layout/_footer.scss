@@ -17,4 +17,8 @@ footer {
             list-style: none;
         }
     }
+    img:hover {
+        filter: invert(55%) sepia(16%) saturate(1686%) hue-rotate(206deg)
+            brightness(97%) contrast(90%);
+    }
 }

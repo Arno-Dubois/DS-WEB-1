@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+        url(/Ressources/background.webp), lightgray 50% / cover no-repeat;
+}
+
+.left {
+    background: linear-gradient(180deg, #433c87 0%, rgba(67, 60, 135, 0) 100%);
+    max-width: 563px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    p {
+        padding: 1rem;
+        width: max(350px);
+    }
+
+    img {
+        padding: max(63px) max(94px);
+        width: max(375px);
+    }
+
+    button {
+        background-color: $secondary-purple;
+        border-radius: 25px;
+        padding: 17px 73px;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.15);
+            background-color: $primary-purple;
+        }
+    }
+}
+
+.right {
+    background-image: url("/Ressources/losange.webp");
+    background-size: 728px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &--discover {
+        position: absolute;
+        right: -239px;
+        top: 195px;
+    }
+
+    &:hover {
+        animation: choixpeau 8s;
+        position: absolute;
+    }
+}
+
+@keyframes choxpeau {
+    10% {
+        top: 0px;
+    }
+    25% {
+        left: 0px;
+    }
+    50% {
+        bottom: 0px;
+    }
+    75% {
+        right: 0px;
+    }
+}
